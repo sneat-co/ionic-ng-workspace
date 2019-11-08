@@ -52,3 +52,13 @@
 
 - Angular multiple projects workspace 
   https://angular.io/guide/file-structure#multiple-projects
+
+# Used by
+
+Here is list of projects that use this setup 
+
+- **Sneat project** apps:
+  - https://sneat.app - family life organizer 
+  - https://listus.app - family ToDo, ToBuy & ToWatch lists.
+
+Create a pull request to add a link to your project here.
