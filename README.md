@@ -18,20 +18,29 @@
 
 ## Top level structure
 
-- 📁 node_modules
-- 📁 projects
-  - 📁 apps
-    - 📁 ang1 (_angular app_)
-    - 📁 **ionic1** (_first Ionic app_)
-    - 📁 **ionic2** (_second Ionic app_)
-  - 📁 libs
-     - 📁 lib1
-     - 📁 lib2
-- 📄 **angular.json**
-- 📄 **ionic.config.json**
-- 📄 package.json
-- 📄 tsconfig.json
-- 📄 tslint.json
+    📁 node_modules
+    📁 projects
+      📁 apps
+        📁 ang1 (_angular app_)
+           ...
+        📁 **ionic1** (_first Ionic app_)
+           📄 package.json
+           ...
+        📁 **ionic2** (_second Ionic app_)
+           📄 package.json
+           ...
+      📁 libs
+         📁 lib1
+           📄 package.json
+           ...
+         📁 lib2
+           📄 package.json
+           ...
+    📄 **angular.json**
+    📄 **ionic.config.json**
+    📄 **package.json**
+    📄 tsconfig.json
+    📄 tslint.json
 
 ## Credits & references
 
