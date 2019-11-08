@@ -1,0 +1,10 @@
+{
+    "projects": {
+        "ionic1": {
+            "name": "ionic1",
+            "integrations": {},
+            "type": "angular",
+            "root": "projects/apps/ionic1"
+        }
+    }
+}

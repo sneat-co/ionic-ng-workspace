@@ -1,0 +1,246 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "newProjectRoot": "projects",
+    "projects": {
+        "lib0": {
+            "projectType": "library",
+            "root": "projects/libs/lib1",
+            "sourceRoot": "projects/libs/lib1/src",
+            "prefix": "lib0",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "options": {
+                        "tsConfig": "projects/libs/lib1/tsconfig.lib.json",
+                        "project": "projects/libs/lib1/ng-package.json"
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "projects/libs/lib1/src/test.ts",
+                        "tsConfig": "projects/libs/lib1/tsconfig.spec.json",
+                        "karmaConfig": "projects/libs/lib1/karma.conf.js"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "projects/libs/lib1/tsconfig.lib.json",
+                            "projects/libs/lib1/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            }
+        },
+        "lib1": {
+            "projectType": "library",
+            "root": "projects/libs/lib1",
+            "sourceRoot": "projects/libs/lib1/src",
+            "prefix": "lib1",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "options": {
+                        "tsConfig": "projects/libs/lib1/tsconfig.lib.json",
+                        "project": "projects/libs/lib1/ng-package.json"
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "projects/libs/lib1/src/test.ts",
+                        "tsConfig": "projects/libs/lib1/tsconfig.spec.json",
+                        "karmaConfig": "projects/libs/lib1/karma.conf.js"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "projects/libs/lib1/tsconfig.lib.json",
+                            "projects/libs/lib1/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            }
+        },
+        "lib2": {
+            "projectType": "library",
+            "root": "projects/libs/lib2",
+            "sourceRoot": "projects/libs/lib2/src",
+            "prefix": "lib2",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "options": {
+                        "tsConfig": "projects/libs/lib2/tsconfig.lib.json",
+                        "project": "projects/libs/lib2/ng-package.json"
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "projects/libs/lib2/src/test.ts",
+                        "tsConfig": "projects/libs/lib2/tsconfig.spec.json",
+                        "karmaConfig": "projects/libs/lib2/karma.conf.js"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "projects/libs/lib2/tsconfig.lib.json",
+                            "projects/libs/lib2/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            }
+        },
+        "ang1": {
+            "projectType": "application",
+            "schematics": {
+                "@schematics/angular:component": {
+                    "style": "scss"
+                }
+            },
+            "root": "projects/apps/ang1",
+            "sourceRoot": "projects/apps/ang1/src",
+            "prefix": "app",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:browser",
+                    "options": {
+                        "outputPath": "dist-apps/ang1",
+                        "index": "projects/apps/ang1/src/index.html",
+                        "main": "projects/apps/ang1/src/main.ts",
+                        "polyfills": "projects/apps/ang1/src/polyfills.ts",
+                        "tsConfig": "projects/apps/ang1/tsconfig.json",
+                        "aot": false,
+                        "assets": [
+                            "projects/apps/ang1/src/favicon.ico",
+                            "projects/apps/ang1/src/assets"
+                        ],
+                        "styles": [
+                            "projects/apps/ang1/src/styles.scss"
+                        ],
+                        "scripts": []
+                    },
+                    "configurations": {
+                        "production": {
+                            "fileReplacements": [
+                                {
+                                    "replace": "projects/apps/ang1/src/environments/environment.ts",
+                                    "with": "projects/apps/ang1/src/environments/environment.prod.ts"
+                                }
+                            ],
+                            "optimization": true,
+                            "outputHashing": "all",
+                            "sourceMap": false,
+                            "extractCss": true,
+                            "namedChunks": false,
+                            "aot": true,
+                            "extractLicenses": true,
+                            "vendorChunk": false,
+                            "buildOptimizer": true,
+                            "budgets": [
+                                {
+                                    "type": "initial",
+                                    "maximumWarning": "2mb",
+                                    "maximumError": "5mb"
+                                },
+                                {
+                                    "type": "anyComponentStyle",
+                                    "maximumWarning": "6kb",
+                                    "maximumError": "10kb"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "serve": {
+                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "options": {
+                        "browserTarget": "ang1:build"
+                    },
+                    "configurations": {
+                        "production": {
+                            "browserTarget": "ang1:build:production"
+                        }
+                    }
+                },
+                "extract-i18n": {
+                    "builder": "@angular-devkit/build-angular:extract-i18n",
+                    "options": {
+                        "browserTarget": "ang1:build"
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "projects/apps/ang1/src/test.ts",
+                        "polyfills": "projects/apps/ang1/src/polyfills.ts",
+                        "tsConfig": "projects/apps/ang1/tsconfig.spec.json",
+                        "karmaConfig": "projects/apps/ang1/karma.conf.js",
+                        "assets": [
+                            "projects/apps/ang1/src/favicon.ico",
+                            "projects/apps/ang1/src/assets"
+                        ],
+                        "styles": [
+                            "projects/apps/ang1/src/styles.scss"
+                        ],
+                        "scripts": []
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "projects/apps/ang1/tsconfig.json",
+                            "projects/apps/ang1/tsconfig.spec.json",
+                            "projects/apps/ang1/e2e/tsconfig.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                },
+                "e2e": {
+                    "builder": "@angular-devkit/build-angular:protractor",
+                    "options": {
+                        "protractorConfig": "projects/apps/ang1/e2e/protractor.conf.js",
+                        "devServerTarget": "ang1:serve"
+                    },
+                    "configurations": {
+                        "production": {
+                            "devServerTarget": "ang1:serve:production"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "defaultProject": "ang1",
+    "cli": {
+        "defaultCollection": "@ionic/angular-toolkit"
+    },
+    "schematics": {
+        "@ionic/angular-toolkit:component": {
+            "styleext": "scss"
+        },
+        "@ionic/angular-toolkit:page": {
+            "styleext": "scss"
+        }
+    }
+}

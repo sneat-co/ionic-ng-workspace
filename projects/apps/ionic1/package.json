@@ -1,0 +1,16 @@
+{
+    "name": "ionic1",
+    "description": "An example of Ionic app within multi-project Angular workspace",
+    "version": "0.0.1",
+    "author": "Alexander Trakhimenok",
+    "homepage": "https://ionicframework.com/",
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "test": "ng test",
+        "lint": "ng lint",
+        "eng serve2e": "ng e2e"
+    },
+    "private": false
+}
