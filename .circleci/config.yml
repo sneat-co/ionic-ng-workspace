@@ -3,7 +3,7 @@ version: 2
 jobs:
     # The test job
     test:
-        working_directory: ~/ionic-ng-workspace
+        working_directory: ~/
         docker:
             - image: circleci/node:10-browsers
         steps:
