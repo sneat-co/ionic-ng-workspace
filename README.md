@@ -19,21 +19,21 @@
 ## Top level structure
 
     📁 node_modules
-    📁 projects
-      📁 apps
-        📁 ang1 _angular app)
+    📂 projects
+      📂 apps
+        📂 ang1 _angular app)
            ...
-        📁 ionic1 (first Ionic app)
+        📂 ionic1 (first Ionic app)
            📄 package.json
            ...
-        📁 ionic2 (second Ionic app)
+        📂 ionic2 (second Ionic app)
            📄 package.json
            ...
-      📁 libs
-         📁 lib1
+      📂 libs
+         📂 lib1
            📄 package.json
            ...
-         📁 lib2
+         📂 lib2
            📄 package.json
            ...
     📄 angular.json
