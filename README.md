@@ -21,7 +21,7 @@
     📁 node_modules
     📂 projects
       📂 apps
-        📂 ang1 _angular app)
+        📂 ang1 (angular app)
            ...
         📂 ionic1 (first Ionic app)
            📄 package.json
