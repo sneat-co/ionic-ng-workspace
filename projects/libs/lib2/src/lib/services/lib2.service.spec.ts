@@ -1,12 +1,14 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { BlankLibService } from './lib2.service';
+import {Lib2Service} from './lib2.service';
 
 describe('Lib2Service', () => {
-  beforeEach(() => TestBed.configureTestingModule({}));
+    beforeEach(() => TestBed.configureTestingModule({
+        providers: [Lib2Service],
+    }));
 
-  it('should be created', () => {
-    const service: BlankLibService = TestBed.get(BlankLibService);
-    expect(service).toBeTruthy();
-  });
+    it('should be created', () => {
+        const service: Lib2Service = TestBed.get(Lib2Service);
+        expect(service).toBeTruthy();
+    });
 });
