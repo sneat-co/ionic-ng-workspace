@@ -1,25 +1,20 @@
-# Multi-project setup for Ionic apps with single `node_modules` & support of JetBrains IDE(s)
+# Multi-project setup for Ionic apps with root `package.json` and common `node_modules`
 
-Multi-project setup for Ionic/Angular apps &amp; libraries with single or hierarchical `node_modules` &amp; `package.json`. Supports JetBrains IDE(s).
+- Root `package.json`, `tsconfig.json`, etc. to manage common settings & dependencies
+- Works correctly with JetBrains IDEs *(WebStorm, IDEA, PyCharm, GoLand, etc.)*
+- Project level `package.json` to overrider/add project specific settings & dependencies
 
 ## Purpose & benefits of multi-project workspace
 
-- Quicker to pull & setup
-- Less disk space
-- 
+- Consistent configuration across multiple projects
 
-## Credits
+- Quick refactoring across multiple projects
+  <br>
+  *(e.g. renaming method in library with instant refactoring of all dependent projects)*
 
-Initial idea for this setup is taken from this article: https://devdactic.com/ionic-multi-app-shared-library/
+- Quicker to pull & setup due to single `node_modules` so you don't need to install same packages multiple times
 
-And Ionic documentation: https://beta.ionicframework.com/docs/cli/configuration#multi-app-projects
-
-
-## How it different:
-
-- Single `node_modules` so you don't need to install multiple times
-- Supports JetBrains IDEA suit (like WebStorm and the rest)
-- Supports renaming in libraries with simultaneous auto-refactoring of multiple apps
+- Quicker & easy to update common dependencies
 
 ## Top level structure
 
@@ -38,4 +33,13 @@ And Ionic documentation: https://beta.ionicframework.com/docs/cli/configuration#
 - 📄 tsconfig.json
 - 📄 tslint.json
 
-## Ionic project structure
+## Credits & references
+
+- Initial idea for this setup is taken from this article:
+  https://devdactic.com/ionic-multi-app-shared-library/
+
+- Ionic documentation
+  https://beta.ionicframework.com/docs/cli/configuration#multi-app-projects
+
+- Angular multiple projects workspace 
+  https://angular.io/guide/file-structure#multiple-projects
