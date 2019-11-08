@@ -21,12 +21,12 @@
     📁 node_modules
     📁 projects
       📁 apps
-        📁 ang1 (_angular app_)
+        📁 ang1 _angular app)
            ...
-        📁 **ionic1** (_first Ionic app_)
+        📁 ionic1 (first Ionic app)
            📄 package.json
            ...
-        📁 **ionic2** (_second Ionic app_)
+        📁 ionic2 (second Ionic app)
            📄 package.json
            ...
       📁 libs
@@ -36,9 +36,9 @@
          📁 lib2
            📄 package.json
            ...
-    📄 **angular.json**
-    📄 **ionic.config.json**
-    📄 **package.json**
+    📄 angular.json
+    📄 ionic.config.json
+    📄 package.json
     📄 tsconfig.json
     📄 tslint.json
 
