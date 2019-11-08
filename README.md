@@ -1,5 +1,7 @@
 # Multi-project setup for Ionic apps with root `package.json` and common `node_modules`
 
+[![CircleCI](https://circleci.com/gh/sneat-opensource/ionic-ng-workspace.svg?style=svg)](https://circleci.com/gh/sneat-opensource/ionic-ng-workspace)
+
 - Root `package.json`, `tsconfig.json`, etc. to manage common settings & dependencies
 - Works correctly with JetBrains IDEs *(WebStorm, IDEA, PyCharm, GoLand, etc.)*
 - Project level `package.json` to overrider/add project specific settings & dependencies
