@@ -1,8 +1,7 @@
-version: 2
+version: 2.1
 
 jobs:
-    # The test job
-    test:
+    build:
         working_directory: ~/
         docker:
             - image: circleci/node:10-browsers
