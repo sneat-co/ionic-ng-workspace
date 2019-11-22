@@ -5,31 +5,31 @@
     "projects": {
         "lib0": {
             "projectType": "library",
-            "root": "projects/libs/lib1",
-            "sourceRoot": "projects/libs/lib1/src",
+            "root": "projects/libs/lib0",
+            "sourceRoot": "projects/libs/lib0/src",
             "prefix": "lib0",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-ng-packagr:build",
                     "options": {
-                        "tsConfig": "projects/libs/lib1/tsconfig.lib.json",
-                        "project": "projects/libs/lib1/ng-package.json"
+                        "tsConfig": "projects/libs/lib0/tsconfig.lib.json",
+                        "project": "projects/libs/lib0/ng-package.json"
                     }
                 },
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "main": "projects/libs/lib1/src/test.ts",
-                        "tsConfig": "projects/libs/lib1/tsconfig.spec.json",
-                        "karmaConfig": "projects/libs/lib1/karma.conf.js"
+                        "main": "projects/libs/lib0/src/test.ts",
+                        "tsConfig": "projects/libs/lib0/tsconfig.spec.json",
+                        "karmaConfig": "projects/libs/lib0/karma.conf.js"
                     }
                 },
                 "lint": {
                     "builder": "@angular-devkit/build-angular:tslint",
                     "options": {
                         "tsConfig": [
-                            "projects/libs/lib1/tsconfig.lib.json",
-                            "projects/libs/lib1/tsconfig.spec.json"
+                            "projects/libs/lib0/tsconfig.lib.json",
+                            "projects/libs/lib0/tsconfig.spec.json"
                         ],
                         "exclude": [
                             "**/node_modules/**"

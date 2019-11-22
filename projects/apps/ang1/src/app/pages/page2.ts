@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Lib2Service} from 'lib2/services/lib2.service';
+import {Lib2Service} from 'lib2';
 
 @Component({
     selector: 'app-about-page',

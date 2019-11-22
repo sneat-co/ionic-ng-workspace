@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Lib1Service} from 'lib1/services/lib1.service';
+import {Lib1Service} from 'lib1';
 
 @Component({
   selector: 'app-home-page',

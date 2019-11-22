@@ -1,9 +1,9 @@
 import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router';
 import {Page0Component} from './page0';
-import {Lib0Module} from 'lib0/lib0.module';
-import {Lib1Module} from 'lib1/lib1.module';
-import {Lib2Module} from 'lib2/lib2.module';
+import {Lib0Module} from 'lib0';
+import {Lib1Module} from 'lib1';
+import {Lib2Module} from 'lib2';
 
 @NgModule({
     declarations: [

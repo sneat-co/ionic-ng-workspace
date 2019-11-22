@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
-import {Lib0Service} from 'lib0/services/lib0.service';
-import {Lib1Service} from 'lib1/services/lib1.service';
-import {Lib2Service} from 'lib2/services/lib2.service';
+import {Lib0Service} from 'lib0';
+import {Lib1Service} from 'lib1';
+import {Lib2Service} from 'lib2';
 
 @Component({
     selector: 'app-about-page',

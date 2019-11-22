@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router';
 import {Page1Component} from './page1';
-import {Lib1Module} from 'lib1/lib1.module';
+import {Lib1Module} from 'lib1';
 
 @NgModule({
     declarations: [
