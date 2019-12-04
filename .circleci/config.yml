@@ -33,13 +33,13 @@ jobs:
             # Build libraries
             - run:
                   name: Building lib0
-                  command: npm build lib0
+                  command: npm run build lib0
             - run:
                   name: Building lib1
-                  command: npm build lib1
+                  command: npm run build lib1
             - run:
                   name: Building lib2
-                  command: npm build lib2
+                  command: npm run build lib2
             # Test the source code
             - run:
                   name: Testing
