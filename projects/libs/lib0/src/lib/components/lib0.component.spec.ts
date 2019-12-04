@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Lib0Component } from './lib0.component';
 
-describe('BlankLibComponent', () => {
+describe('Lib0Component', () => {
   let component: Lib0Component;
   let fixture: ComponentFixture<Lib0Component>;
 
