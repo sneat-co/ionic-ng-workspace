@@ -52,6 +52,9 @@ ionic serve --project {PROJECT_ID}
 
 ## Credits & references
 
+- About lazy loading from packages in Angular:
+  https://github.com/angular/angular-cli/issues/6373#issuecomment-453006158
+
 - Initial idea for this setup is taken from this article:
   https://devdactic.com/ionic-multi-app-shared-library/
 
@@ -65,10 +68,7 @@ ionic serve --project {PROJECT_ID}
 
 Here is list of projects that use this setup 
 
-- [**Sneat project**](https://sneat.app) apps:
-  - https://listus.app
-  - https://rspv.express
-  - https://yo.recipes
+- [**Sneat project**](https://sneat.co/) apps
 
 Create a pull request to add a link to your project here.
 

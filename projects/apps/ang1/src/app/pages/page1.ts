@@ -7,8 +7,8 @@ import {Lib1Service} from 'lib1';
       <h1>Page 1: {{result1}}</h1>
       <lib1-component></lib1-component>
 
-      <a routerLink="/page0">Page 0</a>
-      <a routerLink="/page2">Page 2</a>
+      <shared-pages-menu page="page-1"></shared-pages-menu>
+      <shared-copyright></shared-copyright>
   `,
 })
 export class Page1Component {

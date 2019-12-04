@@ -11,8 +11,8 @@ import {Lib2Service} from 'lib2';
         <lib1-component></lib1-component>
         <lib2-component></lib2-component>
 
-        <a routerLink="/page1">Page 1</a>
-        <a routerLink="/page2">Page 2</a>
+        <shared-pages-menu page="page-0"></shared-pages-menu>
+        <shared-copyright></shared-copyright>
     `,
 })
 export class Page0Component {

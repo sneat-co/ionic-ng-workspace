@@ -1,18 +1,42 @@
 {
-  "extends": "../../../tsconfig.json",
-  "compilerOptions": {
-    "outDir": "../../out-tsc/app",
-    "types": []
-  },
-  "files": [
-    "src/main.ts",
-    "src/polyfills.ts"
-  ],
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "src/test.ts",
-    "src/**/*.spec.ts"
-  ]
+    "extends": "../../../tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "../../out-tsc/app",
+        "types": [],
+        "paths": {
+            "shared-code/*": [
+                "../../../shared-code/*"
+            ],
+            "lib0": [
+                "../../../dist-libs/lib0"
+            ],
+            "lib0/*": [
+                "../../../projects/libs/lib0/src/lib/*"
+            ],
+            "lib1": [
+                "../../../dist-libs/lib1"
+            ],
+            "lib1/*": [
+                "../../../projects/libs/lib1/src/lib/*"
+            ],
+            "lib2": [
+                "../../../dist-libs/lib2"
+            ],
+            "lib2/*": [
+                "../../../projects/libs/lib2/src/lib/*"
+            ]
+        }
+    },
+    "files": [
+        "src/main.ts",
+        "src/polyfills.ts"
+    ],
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "src/test.ts",
+        "src/**/*.spec.ts"
+    ]
 }
